@@ -1912,7 +1912,7 @@ input, select, textarea {
 	.box {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		text-align: center;
+		text-align: left;
 		padding: 2em;
 	}
 
@@ -2474,11 +2474,11 @@ label:before {
   font-weight: normal;
   margin-right: 10px;
 }
-
+/*
 label[for*='1']:before { content: '\f1cb'; }
 label[for*='2']:before { content: '\f17d'; }
 label[for*='3']:before { content: '\f16c'; }
-label[for*='4']:before { content: '\f171'; }
+label[for*='4']:before { content: '\f171'; } */
 
 label:hover {
   color: #789;
@@ -2500,9 +2500,12 @@ input:checked + label {
 }
 
 @media screen and (max-width: 800px) {
-  label {
+  /*label {
     font-size: 0;
-  }
+  }*/
+    label {
+        width: 30%;
+    }
   label:before {
     margin: 0;
     font-size: 18px;
